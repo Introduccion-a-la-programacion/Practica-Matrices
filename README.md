@@ -94,4 +94,17 @@ Dado una matriz **cuadrada**, devolver el vector de la diagonal, iniciando con e
 
 >>>formarMatrizTriangularSuperior(5)
 [[1, 1, 1, 1, 1], [0, 1, 1, 1, 1], [0, 0, 1, 1, 1], [0, 0, 0, 1, 1], [0, 0, 0, 0, 1]]
+```
 
+## bordesDeMatriz(matriz)
+Dado una matriz de cualquier tamaño retornar **True** si en el caso de que la primera y +ultima fila contengan elementos igual a 0 y el resto de las filas el primer y último índice tenga  0
+```python
+
+miMatriz = [ [0,0,0,0,0], [0,1,3,2,0], [0,1,3,2,0], [0,1,3,2,0],  [0,0,0,0,0]]
+miMatriz2 = [ [0,0,0,0,0], [8,1,3,2,0], [0,1,3,2,0], [0,1,3,2,0],  [0,0,0,0,0]]
+
+>>>bordesDeMatriz(miMatriz)
+True
+>>>bordesDeMatriz(miMatriz2)
+False
+```
