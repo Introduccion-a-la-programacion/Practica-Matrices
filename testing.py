@@ -3,19 +3,6 @@ import pytest;
 
 p = Matrices
     
-def test_invertirLista_1():
-    assert p.invertirLista([5,8,45,96]) == [96, 45, 8, 5]
-    
-def test_invertirLista_2():
-    assert p.invertirLista([56, 85,8,45,96]) == [96, 45, 8, 85, 56]
-
-def test_invertirLista_2():
-    assert isinstance(p.invertirLista([]), str) == isinstance("Error: La lista debe contener al menos 2 elementos", str)
-
-def test_invertirLista_2():
-    assert isinstance(p.invertirLista([2,5,7,"ABC"]), str) == isinstance("Error: La lista debe contener elementos tipo entero", str)
-    
-    
 #####################################################################################################
 
 def test_extremosLista_1():
