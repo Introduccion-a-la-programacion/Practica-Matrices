@@ -98,6 +98,11 @@ Dado una matriz **cuadrada**, devolver el vector de la diagonal, iniciando con e
 
 ## bordesDeMatriz(matriz)
 Dado una matriz de cualquier tamaño retornar **True** si en el caso de que la primera y +ultima fila contengan elementos igual a 0 y el resto de las filas el primer y último índice tenga  0
+
+
+![image](https://user-images.githubusercontent.com/1167750/234723447-f7e5367d-b9f2-4279-854a-4c3526069032.png)
+
+
 ```python
 
 miMatriz = [ [0,0,0,0,0], [0,1,3,2,0], [0,1,3,2,0], [0,1,3,2,0],  [0,0,0,0,0]]
@@ -112,6 +117,8 @@ False
 ## matrizDiamante(matriz)
 Dado una matriz de cualquier tamaño retornar **True** en el caso que los valores internos de una matriz se forme un rombo con ceros
 
+![image](https://user-images.githubusercontent.com/1167750/234724200-23eaecbb-1eea-4ac3-b481-c5ff431b90fe.png)
+ 
 ```python
 matriz1 = [ [1,2,0,4,5], [1,0,0,0,5], [0,0,0,0,0],[ 1,0,0,0,5], [1,2,0,4,5]]
 matriz2 = [ [1,2,0,4,5], [1,0,0,0,5], [0,0,5,0,0],[ 1,0,0,0,5], [1,2,0,4,5]]
