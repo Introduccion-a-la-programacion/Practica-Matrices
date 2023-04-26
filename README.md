@@ -108,3 +108,16 @@ True
 >>>bordesDeMatriz(miMatriz2)
 False
 ```
+
+## matrizDiamante(matriz)
+Dado una matriz de cualquier tamaño retornar **True** en el caso que los valores internos de una matriz se forme un rombo con ceros
+
+```python
+matriz1 = [ [1,2,0,4,5], [1,0,0,0,5], [0,0,0,0,0],[ 1,0,0,0,5], [1,2,0,4,5]]
+matriz2 = [ [1,2,0,4,5], [1,0,0,0,5], [0,0,5,0,0],[ 1,0,0,0,5], [1,2,0,4,5]]
+
+>>>matrizDiamante(matriz1)
+True
+>>>matrizDiamante(matriz1)
+False
+```
