@@ -67,7 +67,7 @@ v2 = [-26, 2, 75 , 19 , -18, 23]
 v3 = [6, 2, 10 , 50, 90] 
 
 def test_obtenerIndicesListas_1():
-    assert Portafolio2B.obtenerIndicesListas([v1, v2, v3]) == [[2,3,4,5], [0,1,3,4,5], [1]]
+    assert Portafolio2B.obtenerIndicesMatriz([v1, v2, v3]) == [[2,3,4,5], [0,1,3,4,5], [1]]
 
 def test_obtenerIndicesListas_2():
-    assert isinstance(Portafolio2B.obtenerIndicesListas(25), str) == isinstance("Error: El parámetro de entrada debe ser una lista", str)
+    assert isinstance(Portafolio2B.obtenerIndicesMatriz(25), str) == isinstance("Error: El parámetro de entrada debe ser una lista", str)
