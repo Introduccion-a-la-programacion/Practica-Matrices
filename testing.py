@@ -1,4 +1,4 @@
-import Portafolio2B;
+import Matrices;
 import pytest;
     
 def test_invertirLista_1():
@@ -71,3 +71,19 @@ def test_obtenerIndicesListas_1():
 
 def test_obtenerIndicesListas_2():
     assert isinstance(Portafolio2B.obtenerIndicesMatriz(25), str) == isinstance("Error: El parámetro de entrada debe ser una lista", str)
+    
+#########################################################################    
+    
+def test_diagonalInversa_1():
+    assert p.diagonalInversa([[50, 25, 89], [2, 8, 9], [57, 32, 71]]) == [57, 8, 89]
+    
+def test_diagonalInversa_2():
+    assert isinstance(str(p.diagonalInversa([[50, 25, 89, 10], [2, 8, 9, 4], [57, 32, 71, 11]])), str) == isinstance('Error: La matriz debe ser de tamaño de columnas impar',str)
+    
+#########################################################################    
+    
+def test_formarMatrizTriangularSuperior_1():
+    assert p.formarMatrizTriangularSuperior(3) ==  [[1, 1, 1], [0, 1, 1], [0, 0, 1]]
+
+def test_formarMatrizTriangularSuperior_2():
+    assert p.formarMatrizTriangularSuperior(5) == [[1, 1, 1, 1, 1], [0, 1, 1, 1, 1], [0, 0, 1, 1, 1], [0, 0, 0, 1, 1], [0, 0, 0, 0, 1]]   
