@@ -76,3 +76,27 @@ def test_formarMatrizTriangularSuperior_1():
 
 def test_formarMatrizTriangularSuperior_2():
     assert p.formarMatrizTriangularSuperior(5) == [[1, 1, 1, 1, 1], [0, 1, 1, 1, 1], [0, 0, 1, 1, 1], [0, 0, 0, 1, 1], [0, 0, 0, 0, 1]]   
+    
+
+#########################################################################        
+    
+    
+miMatriz = [ [0,0,0,0,0], [0,1,3,2,0], [0,1,3,2,0], [0,1,3,2,0],  [0,0,0,0,0]]
+miMatriz2 = [ [0,0,0,0,0], [8,1,3,2,0], [0,1,3,2,0], [0,1,3,2,0],  [0,0,0,0,0]]
+
+def test_bordesDeMatriz_1():
+    assert p.bordesDeMatriz(miMatriz) == True
+    
+def test_bordesDeMatriz_2():
+    assert p.bordesDeMatriz(miMatriz2) == False
+    
+#########################################################################         
+
+matriz1 = [ [1,2,0,4,5], [1,0,0,0,5], [0,0,0,0,0],[ 1,0,0,0,5], [1,2,0,4,5]]
+matriz2 = [ [1,2,0,4,5], [1,0,0,0,5], [0,0,5,0,0],[ 1,0,0,0,5], [1,2,0,4,5]]
+
+def test_matrizDiamante_1():
+    assert p.matrizDiamante(matriz1) == True
+    
+def test_matrizDiamante_2():
+    assert p.matrizDiamante(matriz1) == False    
